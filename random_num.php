@@ -53,6 +53,8 @@ $range_set = [
 // run the above function 6 times
 for($i = 1; $i <= 5; $i++)
 {
-	echo "Random prime numbers range({$range_set[$i][0]}, {$range_set[$i][1]}) = " . implode(get_prime_num_list($range_set[$i][0], $range_set[$i][1]), ', ') . "\r\n";
+	$rA = $range_set[$i][0];
+	$rB = $range_set[$i][1];
+	echo "Random prime numbers range($rA, $rB) = " . implode(get_prime_num_list($rA, $rB), ', ') . "\r\n";
 	echo "=============================================================================\r\n\r\n";
 }
